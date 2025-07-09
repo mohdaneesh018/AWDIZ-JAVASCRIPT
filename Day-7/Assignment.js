@@ -188,7 +188,7 @@ for (let i = 0; i < str.length / 2; i++) {
     }
 }
 
-console.log(isPalindrome);  
+console.log(isPalindrome);
 
 
 
@@ -229,7 +229,11 @@ switch (result) {
 // 17.	Remove duplicates from array without Set. 
 //  Input: [1, 2, 2, 3, 4, 1] 
 //  Output: [1, 2, 3, 4] 
-// let s = [1, 2, 2, 3, 4, 1];
+let s = [1, 2, 2, 3, 4, 1];
+let uniqueArr = s.filter((item, index) => {
+    return s.indexOf(item) === index;
+});
+console.log(uniqueArr);
 
 
 
@@ -240,3 +244,124 @@ switch (result) {
 let element = [10, 20, 30, 40, 50];
 let otp = element.slice(0, 3);
 console.log(otp);
+
+
+
+// 19.	Find intersection of two arrays. 
+//  Input: [1, 2, 3] and [2, 3, 4] 
+//  Output: [2, 3] 
+let arr1 = [1, 2, 3];
+let arr2 = [2, 3, 4];
+let Result = [];
+for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+        if (arr1[i] == arr2[j]) {
+            Result.push(arr1[i]);
+        }
+    }
+}
+console.log(Result);
+
+
+
+// 20.	Reverse array using while loop (in-place). 
+//  Input: [1, 2, 3, 4] 
+//  Output: [4, 3, 2, 1] 
+let t = [1, 2, 3, 4];
+let u = 0
+let v = t.length - 1;
+while (u < v) {
+    let newArr = t[u];
+    t[u] = t[v];
+    t[v] = newArr;
+    u++;
+    v--;
+}
+console.log(t);
+
+
+
+// 21.	Check if all elements in an array are positive (use flag variable). 
+//    Input: [1, 4, 6, 9] 
+//    Output: true
+// Use a flag set to true, and turn it false if a negative number is found in loop
+let elements = [1, 4, 6, 9];
+let isPositive = true;
+for (let i = 0; i < elements.length; i++) {
+    if (elements[i] <= 0) {
+        isPositive = false;
+        break;
+    }
+}
+console.log(isPositive);
+
+
+
+// 22.	Check if a string has both uppercase and lowercase letters. 
+//    Input: "HelloWorld" 
+//    Output: true 
+// Use two flags: hasUpper and hasLower. 
+let strg = "HelloWorld";
+let hasUpper = false;
+let hasLower = false;
+
+for (let i = 0; i < strg.length; i++) {
+    let char = strg[i];
+    if (char === char.toUpperCase() && char !== char.toLowerCase()) {
+        hasUpper = true;
+    }
+    if (char === char.toLowerCase() && char !== char.toUpperCase()) {
+        hasLower = true;
+    }
+    if (hasUpper && hasLower) {
+        break;
+    }
+}
+console.log(hasUpper && hasLower);  // Output: true
+
+
+
+// 23.	Determine if a number is prime using flag inside loop. 
+//    Input: 13 
+//    Output: true 
+// Set flag to false if any divisor is found in loop. 
+let input = 13;
+let isPrime = true;
+for (let i = 2; i < input; i++) {
+    if (input % i == 0) {
+        isPrime = false;
+        break;
+    }
+}
+console.log(isPrime);
+
+
+
+// 24.	Check if an array is sorted in ascending order using flag. 
+//    Input: [2, 5, 8, 9] 
+//    Output: true 
+// Set flag false if any element is greater than next. 
+let arr0 = [2, 5, 8, 9];
+let isSorted = true;
+for (let i = 0; i < arr0.length - 1; i++) {
+    if (arr0[i] > arr0[i + 1]) {
+        isSorted = false;
+        break;
+    }
+}
+console.log(isSorted);
+
+
+
+// 25.	Check if a word has repeating characters using flag.
+//    Input: "coding"
+//    Output: false 
+// let string = "coding";
+// let isRepeat = false;
+// for(let i=0; i < string.length; i++){
+//     if(string[i] == string[i+1]){
+//         isRepeat = true;
+//         break;
+//     }
+// }
+// console.log(isRepeat);
