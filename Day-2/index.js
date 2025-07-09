@@ -1,7 +1,7 @@
 // Operators
 //  1 =    
 //  2 ==    Only Data
-//  3 ===   Boh Data & Datatype
+//  3 ===   Both Data & Datatype
 
     let a = 90;
     let b = 90;
