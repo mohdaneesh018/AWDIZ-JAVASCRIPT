@@ -47,6 +47,7 @@ multiplicationTwoVar();
 
 
 
+
 // Q . Given an two varibles print addition of them by using parameters
 let a = 30;
 let b = 20;
@@ -65,6 +66,7 @@ function subPara(num1, num2) {
 }
 
 subPara(30, 60);
+
 
 
 
