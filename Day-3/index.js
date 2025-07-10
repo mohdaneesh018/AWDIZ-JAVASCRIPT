@@ -28,5 +28,5 @@ switch (userSelectplayer){
         console.log("No found");
         break;
     default: 
-        console.log("None of these");
+        console.log("Rohit");
 }
