@@ -6,7 +6,7 @@ console.log(1, typeof 1);
 console.log(67, typeof 67);
 
 console.log("true", typeof true);
-console.log(false, typeof false);
+console.log("false", typeof false);
 
 // Variables
 var userName = "Aneesh";
