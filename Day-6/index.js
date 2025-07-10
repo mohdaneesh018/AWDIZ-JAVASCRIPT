@@ -15,7 +15,7 @@ boys.forEach(name => console.log("Welcome", name));
 
 // Filter Method
 let num = [22, 45, 67, 78, 98];
-let evenNums = num.filter(num => num % 2 == 0);
+let evenNums = num.filter(nums => nums % 2 == 0);
 console.log(evenNums);
 
 let nums = [22, 45, 67, 78, 98];
@@ -44,7 +44,6 @@ for (let i = 0; i < even.length; i++) {
 console.log(count);
 
 
- 
 let userAge = [34, 54, 76, 86, 90, 20, 30];
 let fixedAge = 86;
 
