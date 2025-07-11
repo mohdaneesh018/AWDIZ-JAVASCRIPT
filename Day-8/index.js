@@ -116,3 +116,14 @@ function getTyped(data, userTypeteams) {
 
 const outputs = getTyped(teams, userTypeteams);
 console.log(outputs, "output");
+
+
+
+function getFruit() {
+  return "apple";
+}
+
+var fruit = getFruit();  // yahan fruit = "apple"
+console.log(fruit);      // print karega apple
+ 
+ 
