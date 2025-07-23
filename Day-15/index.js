@@ -34,7 +34,6 @@ while (left <= right && top <= bottom) {
         }
         left++
     }
-
 }
 
 
@@ -47,7 +46,7 @@ let num = [
     [9, 10, 11, 12],
     [13, 14, 15, 16],
 ];
-function ZPattern(matrix) {
+function number(matrix) {
     let row = matrix.length;
     let column = matrix[0].length;
 
@@ -68,4 +67,4 @@ function ZPattern(matrix) {
     }
 }
 
-ZPattern(num)
+number(num);
